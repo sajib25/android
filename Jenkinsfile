@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  tools{
+    jdk 'java'	
+  }
   environment {
     APP_NAME = 'simple_zip'
   }
