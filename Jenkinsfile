@@ -3,6 +3,9 @@ pipeline {
   environment {
     APP_NAME = 'simple_zip'
   }
+  tools{
+  jdk 'java'}
+  
   options {
     // Stop the build early in case of compile or test failures
     skipStagesAfterUnstable()
